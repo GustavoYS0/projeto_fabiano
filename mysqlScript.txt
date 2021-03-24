@@ -1,0 +1,26 @@
+create database banco_trabalho;
+
+use banco_trabalho;
+
+create table cliente(
+     nome varchar(30) not null,
+     dataNascimento(8) not null,
+     primary key (nome)
+);
+
+create table contaCorrente(
+     saldo double not null,
+     numero int not null,
+     limite double not null,
+     nome_cliente varchar(30) not null,
+     primary key (numero)
+);
+
+create table contaPoupanca(
+     saldo double not null,
+     numero int not null,
+     dataNascimento_cliente(8) not null,
+     nome_cliente varchar(30) not null,
+     dataNascimento_cliente(8) not null,
+     primary key (numero)
+);
