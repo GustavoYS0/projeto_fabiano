@@ -4,7 +4,6 @@ public class ContaCorrente extends Conta {
 
      public ContaCorrente(double saldo, Integer numero, Cliente cliente, double limite) {
           super(saldo, numero, cliente);
-          //TODO Auto-generated constructor stub
      }
      
 }
